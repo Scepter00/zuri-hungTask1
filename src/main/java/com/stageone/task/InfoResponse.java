@@ -1,8 +1,12 @@
-package com.stageone.task.Data;
+package com.stageone.task;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+@AllArgsConstructor
+@NoArgsConstructor
 @Getter
 @Setter
 public class InfoResponse {
@@ -12,5 +16,5 @@ public class InfoResponse {
     private String Track;
     private String githubFileUrl;
     private String githubRepoUrl;
-    private int statusCode;
+    private int statusCode = 200;
 }

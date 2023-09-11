@@ -1,4 +1,4 @@
-package com.task;
+package com.stageone.task;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
