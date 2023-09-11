@@ -1,6 +1,6 @@
 package com.stageone.task.controller;
 
-import com.stageone.task.InfoResponse;
+import com.stageone.task.Data.InfoResponse;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -26,7 +26,7 @@ public class infoController {
         SimpleDateFormat utcTimeFormat = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss'Z'");
         String utcTime = utcTimeFormat.format(new Date());
 
-        String github_file_url = "https://github.com/Scepter00/zuri-hungTask1";
+        String github_file_url = "https://github.com/Scepter00/zuri-hungTask1/blob/master/src/main/java/com/stageone/task/controller/infoController.java";
         String github_repo_url = "https://github.com/Scepter00/zuri-hungTask1";
         int statusCode = 200;
 

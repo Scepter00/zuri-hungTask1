@@ -1,4 +1,4 @@
-package com.stageone.task;
+package com.stageone.task.Data;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
