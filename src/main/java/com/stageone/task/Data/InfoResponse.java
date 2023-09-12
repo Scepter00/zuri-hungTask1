@@ -10,11 +10,11 @@ import lombok.Setter;
 @Getter
 @Setter
 public class InfoResponse {
-    private String slackName;
-    private String currentDay;
-    private String utcTime;
-    private String Track;
-    private String githubFileUrl;
-    private String githubRepoUrl;
-    private int statusCode = 200;
+    private String slack_name;
+    private String current_day;
+    private String utc_time;
+    private String track;
+    private String github_file_url;
+    private String github_repo_url;
+    private int status_code = 200;
 }
