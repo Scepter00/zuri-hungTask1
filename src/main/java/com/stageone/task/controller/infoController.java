@@ -1,6 +1,7 @@
 package com.stageone.task.controller;
 
 import com.stageone.task.Data.InfoResponse;
+import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,6 +14,7 @@ import java.util.Locale;
 
 @RequestMapping("api/v1/info")
 @RestController
+@RequiredArgsConstructor
 public class infoController {
 
     @GetMapping("")
