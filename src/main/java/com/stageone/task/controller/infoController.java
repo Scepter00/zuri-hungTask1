@@ -17,7 +17,7 @@ public class infoController {
 
     @GetMapping("")
     public ResponseEntity <InfoResponse> getInfoResponse(
-            @RequestParam String slackName,
+            @RequestParam String slack_name,
             @RequestParam String track
     ) {
         SimpleDateFormat current_day_format = new SimpleDateFormat("EEEE", Locale.ENGLISH);
@@ -30,7 +30,7 @@ public class infoController {
         String github_repo_url = "https://github.com/Scepter00/zuri-hungTask1";
         int status_code = 200;
 
-        InfoResponse infoResponse = new InfoResponse(slackName, current_day, utc_time, track, github_file_url, github_repo_url, status_code);
+        InfoResponse infoResponse = new InfoResponse(slack_name, current_day, utc_time, track, github_file_url, github_repo_url, status_code);
         return ResponseEntity.ok(infoResponse);
     }
 }
