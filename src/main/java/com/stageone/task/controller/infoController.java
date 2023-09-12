@@ -4,7 +4,6 @@ import com.stageone.task.Data.InfoResponse;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -12,14 +11,13 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
 
-@RequestMapping("api/v1/info")
 @RestController
 @RequiredArgsConstructor
 public class infoController {
 
-    @GetMapping("")
+    @GetMapping("/api")
     public ResponseEntity <InfoResponse> getInfoResponse(
-            @RequestParam String slack_name,
+            @RequestParam String  slack_name,
             @RequestParam String track
     ) {
         SimpleDateFormat current_day_format = new SimpleDateFormat("EEEE", Locale.ENGLISH);
