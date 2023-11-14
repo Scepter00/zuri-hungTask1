@@ -2,8 +2,10 @@ package com.stageone.task.Data;
 
 import lombok.*;
 
-@Data
+@Setter
+@Getter
 @AllArgsConstructor
+@NoArgsConstructor
 public class InfoResponse {
     private String slack_name;
     private String current_day;
