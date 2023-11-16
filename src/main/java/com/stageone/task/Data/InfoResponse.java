@@ -2,8 +2,7 @@ package com.stageone.task.Data;
 
 import lombok.*;
 
-@Setter
-@Getter
+@Data
 @AllArgsConstructor
 @NoArgsConstructor
 public class InfoResponse {
